@@ -1,11 +1,13 @@
 # The first one I did
-def triangleTest(side1, side2, side3):
-    sides = sorted([side1, side2, side3])
-    return sides[0] + sides[1] > sides[2]
+def trianglesides(side1, side2, side3):
+    triangle = False
+    if side1 + side2 >= side3 and side3 + side2 >= side1 and side3 + side1 >= side2:
+        triangle = True
+        print("Is a triangle")
+    else:
+        print("Is not a triangle")
 
-print(triangleTest(3, 4, 5))  
-print(triangleTest(1, 2, 3))  
-
+trianglesides(10, 10, 10)
 # The second one I did
 def greet_morning(name):
     print(f"Good morning, {name}!")
